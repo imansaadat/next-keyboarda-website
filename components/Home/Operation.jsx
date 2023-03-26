@@ -1,37 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import projects from '../../public/assets/images/base/index/Operation-section/completed-project.svg'
-import customer from '../../public/assets/images/base/index/Operation-section/customer-satisfaction.svg'
-import support from '../../public/assets/images/base/index/Operation-section/support-team.svg'
-import developers from '../../public/assets/images/base/index/Operation-section/developers-team.svg'
-const Operation = () => {
-  const OperationData = [
-    {
-      id: 1,
-      img: projects,
-      count: '20',
-      text: 'پروژهای انجام شده'
-    },
-    {
-      id: 2,
-      img: customer,
-      count: '20',
-      text: 'رضایت مشتریان'
-    },
-    {
-      id: 3,
-      img: support,
-      count: '2',
-      text: 'پشتیبان مجرب'
-    },
-    {
-      id: 4,
-      img: developers,
-      count: '6',
-      text: 'تیم فنی'
-    },
-  ]
-  
+const Operation = ({operationData}) => {
   return (
     <section id="operation" className="relative py-20">
       <div className="max-w-[1240px] mx-auto px-5">
@@ -49,7 +18,7 @@ const Operation = () => {
           className="grid md:grid-cols-2 lg:grid-cols-4 bg-slate-100 px-2 py-8 gap-8"
         >
           {
-            OperationData.map(({ id, img, count, text }) => (
+            operationData.map(({ id, img, count, text }) => (
               <div className="text-center" key={id}>
                 <Image
                   src={img}

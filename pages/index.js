@@ -8,7 +8,7 @@ import Skills from '../components/Home/Skills'
 import Reviews from '../components/Home/Reviews'
 import Technologies from '../components/Home/Technologies'
 import Consultation from '../components/Home/Consultation'
-import {boxes} from '../data'
+import {boxes,operationData} from '../data'
 
 
 export default function Home({setShowModal}) {
@@ -22,7 +22,7 @@ export default function Home({setShowModal}) {
       <main>
         <Hero />
         <Services boxesData = {boxes} />
-        <Operation />
+        <Operation operationData = {operationData} />
         <Projects />
         <Skills />
         <WhyKeyboarda />
