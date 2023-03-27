@@ -3,10 +3,14 @@ import ui from './public/assets/images/base/index/service-section/ui.svg'
 import marketing from './public/assets/images/base/index/service-section/marketing.svg'
 import illus from './public/assets/images/base/index/service-section/illus.svg'
 // 
-import projects from './public/assets/images/base/index/Operation-section/completed-project.svg'
-import customer from './public/assets/images/base/index/Operation-section/customer-satisfaction.svg'
-import support from './public/assets/images/base/index/Operation-section/support-team.svg'
-import developers from './public/assets/images/base/index/Operation-section/developers-team.svg'
+import projectImg from './public/assets/images/base/index/Operation-section/completed-project.svg'
+import customerImg from './public/assets/images/base/index/Operation-section/customer-satisfaction.svg'
+import supportImg from './public/assets/images/base/index/Operation-section/support-team.svg'
+import developersImg from './public/assets/images/base/index/Operation-section/developers-team.svg'
+// 
+import sitechin from './public/assets/images/base/index/projects-section/sitechin.jpg'
+import landing from './public/assets/images/base/index/projects-section/landing-sitechin.jpg'
+import ressis from './public/assets/images/base/index/projects-section/ressis.png'
 export const boxes = [
     {
       id: 1,
@@ -37,26 +41,44 @@ export const boxes = [
   export const operationData = [
     {
       id: 1,
-      img: projects,
+      img:projectImg,
       count: '20',
       text: 'پروژهای انجام شده'
     },
     {
       id: 2,
-      img: customer,
+      img: customerImg,
       count: '20',
       text: 'رضایت مشتریان'
     },
     {
       id: 3,
-      img: support,
+      img: supportImg,
       count: '2',
       text: 'پشتیبان مجرب'
     },
     {
       id: 4,
-      img: developers,
+      img: developersImg,
       count: '6',
       text: 'تیم فنی'
     },
+  ]
+
+  export const projects = [
+    {
+      id: 1,
+      img: sitechin,
+      name: " سایت ساز سایتچین"
+    },
+    {
+      id: 2,
+      img: landing,
+      name: "لندینگ سایتچین"
+    },
+    {
+      id: 3,
+      img: ressis,
+      name: " تجهیزات رسیس"
+    }
   ]

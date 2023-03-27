@@ -9,31 +9,8 @@ import 'swiper/css';
 import 'swiper/css/autoplay'
 import 'swiper/css/navigation';
 SwiperCore.use([EffectCoverflow]);
-// images
-import sitechin from '../../public/assets/images/base/index/projects-section/sitechin.jpg'
-import landing from '../../public/assets/images/base/index/projects-section/landing-sitechin.jpg'
-import ressis from '../../public/assets/images/base/index/projects-section/ressis.png'
 
-const Projects = () => {
-
-  const projects = [
-    {
-      id: 1,
-      img: sitechin,
-      name: " سایت ساز سایتچین"
-    },
-    {
-      id: 2,
-      img: landing,
-      name: "لندینگ سایتچین"
-    },
-    {
-      id: 3,
-      img: ressis,
-      name: " تجهیزات رسیس"
-    }
-  ]
-
+const Projects = ({projectsData}) => {
   return (
     <section className="mb-10">
       <div className="flex justify-center items-center text-center mb-8">
@@ -109,7 +86,7 @@ const Projects = () => {
       >
 
         {
-          projects.map(({ id, img, name }) => (
+          projectsData.map(({ id, img, name }) => (
             <SwiperSlide key={id}>
                 <div
                   className="text-center p-5 shadow-md rounded-md bg-white relative overflow-hidden group"
