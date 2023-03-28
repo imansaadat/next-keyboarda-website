@@ -1,69 +1,32 @@
-import React from 'react'
+import React from "react";
 
-const Skills = () => {
-
-  const skills = [
-    {
-      id: 1,
-      title: "HTML&CSS",
-      percent: '95'
-    },
-    {
-      id: 2,
-      title: "Tailwind",
-      percent: '85'
-    },
-    {
-      id: 3,
-      title: "Bootstrap",
-      percent: '90'
-    },
-    {
-      id: 4,
-      title: "Javascript",
-      percent: '75'
-    },
-    {
-      id: 5,
-      title: "React&Next JS",
-      percent: '70'
-    },
-  ]
-
+const Skills = ({ skillsData }) => {
   return (
     <section id="skill" className="relative py-20">
       <div className="max-w-[1240px] mx-auto px-5">
-        <div
-          className="bg-skill bg-cover bg-center text-center shadow-xl rounded-md py-7 px-5"
-        >
+        <div className="bg-skill bg-cover bg-center text-center shadow-xl rounded-md py-7 px-5">
           <h2 className="text-2xl font-bold text-black my-8 lg:my-0">
             مهارت های تیم کیبوردا
           </h2>
-          <div
-            className="grid md:grid-cols-3 lg:grid-cols-5 justify-items-center items-center gap-5 min-h-[300px]"
-          >
-            {
-              skills.map(({ id, title, percent }) => (
-                <div className="text-center" key={id}>
-                  <div
-                    id={`per-${percent}`}
-                    className="relative w-[150px] h-[150px] m-[.5rem] rounded-full bg-[#ffcdb2] overflow-hidden"
-                  >
-                    <div
-                      className="flex justify-center items-center absolute top-1/2 left-1/2 h-[115px] w-[115px] bg-light rounded-full text-xl font-normal text-black translate-y-[-50%] translate-x-[-50%]"
-                    >
-                      {percent}%
-                    </div>
+          <div className="grid md:grid-cols-3 lg:grid-cols-5 justify-items-center items-center gap-5 min-h-[300px]">
+            {skillsData.map(({ id, title, percent }) => (
+              <div className="text-center" key={id}>
+                <div
+                  id={`per-${percent}`}
+                  className="relative w-[150px] h-[150px] m-[.5rem] rounded-full bg-[#ffcdb2] overflow-hidden"
+                >
+                  <div className="flex justify-center items-center absolute top-1/2 left-1/2 h-[115px] w-[115px] bg-light rounded-full text-xl font-normal text-black translate-y-[-50%] translate-x-[-50%]">
+                    {percent}%
                   </div>
-                  <h4 className="text-lg text-black font-normal mt-4">{title}</h4>
                 </div>
-              ))
-            }
+                <h4 className="text-lg text-black font-normal mt-4">{title}</h4>
+              </div>
+            ))}
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Skills
+export default Skills;

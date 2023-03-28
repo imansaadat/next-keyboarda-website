@@ -82,3 +82,31 @@ export const boxes = [
       name: " تجهیزات رسیس"
     }
   ]
+
+  export const skills = [
+    {
+      id: 1,
+      title: "HTML&CSS",
+      percent: '95'
+    },
+    {
+      id: 2,
+      title: "Tailwind",
+      percent: '85'
+    },
+    {
+      id: 3,
+      title: "Bootstrap",
+      percent: '90'
+    },
+    {
+      id: 4,
+      title: "Javascript",
+      percent: '75'
+    },
+    {
+      id: 5,
+      title: "React&Next JS",
+      percent: '70'
+    },
+  ]
