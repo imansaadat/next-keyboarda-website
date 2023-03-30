@@ -11,6 +11,9 @@ import developersImg from './public/assets/images/base/index/Operation-section/d
 import sitechin from './public/assets/images/base/index/projects-section/sitechin.jpg'
 import landing from './public/assets/images/base/index/projects-section/landing-sitechin.jpg'
 import ressis from './public/assets/images/base/index/projects-section/ressis.png'
+// 
+import zoomTeam from './public/assets/images/base/index/reviews-section/customer-picture.png'
+// 
 export const boxes = [
     {
       id: 1,
@@ -108,5 +111,26 @@ export const boxes = [
       id: 5,
       title: "React&Next JS",
       percent: '70'
+    },
+  ]
+
+  export const ClientCards = [
+    {
+      id: 1,
+      name:'تیم سیگنال زون',
+      pic: zoomTeam,
+      desc: 'همکاری با تیم حرفه ای کیبوردا، یکی از تجرب های خوب سیگنال زون بود. تخصص، دقت و سرعت پاسخگویی جزو ویژگی های این شرکت است',
+    },
+    {
+      id: 2,
+      name:'ایمان سعادت',
+      pic: zoomTeam,
+      desc:'من ایده هایی داشتم که پس از مشورت با تیم برنامه نویسی کیبوردا و عملیاتی کردن ایده ام توسط تیم مجرب کیبوردا به یک محصول ایده آل دست یافتم.',
+    },
+    {
+      id: 3,
+      name: 'امیر سعادت',
+      pic: zoomTeam,
+      desc: 'من ایده هایی داشتم که پس از مشورت با تیم برنامه نویسی کیبوردا و عملیاتی کردن ایده ام توسط تیم مجرب کیبوردا به یک محصول ایده آل دست یافتم.',
     },
   ]

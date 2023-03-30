@@ -1,38 +1,20 @@
-import React from 'react'
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 // Icons
-import { AiFillStar } from 'react-icons/ai'
+import { AiFillStar } from "react-icons/ai";
 // Import Swiper styles
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore,{Navigation,Scrollbar,Autoplay,Pagination} from 'swiper';
-import 'swiper/css';
-import 'swiper/css/autoplay'
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-// Image
-import zoomTeam from '../../public/assets/images/base/index/reviews-section/customer-picture.png'
-const Reviews = () => {
-  const ClientCards = [
-    {
-      id: 1,
-      name:'تیم سیگنال زون',
-      pic: zoomTeam,
-      desc: 'همکاری با تیم حرفه ای کیبوردا، یکی از تجرب های خوب سیگنال زون بود. تخصص، دقت و سرعت پاسخگویی جزو ویژگی های این شرکت است',
-    },
-    {
-      id: 2,
-      name:'ایمان سعادت',
-      pic: zoomTeam,
-      desc:'من ایده هایی داشتم که پس از مشورت با تیم برنامه نویسی کیبوردا و عملیاتی کردن ایده ام توسط تیم مجرب کیبوردا به یک محصول ایده آل دست یافتم.',
-    },
-    {
-      id: 3,
-      name: 'امیر سعادت',
-      pic: zoomTeam,
-      desc: 'من ایده هایی داشتم که پس از مشورت با تیم برنامه نویسی کیبوردا و عملیاتی کردن ایده ام توسط تیم مجرب کیبوردا به یک محصول ایده آل دست یافتم.',
-    },
-  ]
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, {
+  Navigation,
+  Scrollbar,
+  Autoplay,
+  Pagination,
+} from "swiper";
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+const Reviews = ({ClientData}) => {
   return (
     <section className="relative py-10">
       <div className="max-w-[1240px] mx-auto px-5">
@@ -124,8 +106,9 @@ const Reviews = () => {
           </div>
         </div>
 
-        <Swiper className='w-full overflow-hidden'
-          modules={[Navigation,Autoplay,Scrollbar,Pagination]}
+        <Swiper
+          className="w-full overflow-hidden"
+          modules={[Navigation, Autoplay, Scrollbar, Pagination]}
           spaceBetween={20}
           slidesPerView={3}
           navigation
@@ -133,7 +116,7 @@ const Reviews = () => {
           loop={true}
           grabCursor={true}
           autoplay={{ delay: 9000 }}
-          scrollbar={{draggable:true}}
+          scrollbar={{ draggable: true }}
           pagination={true}
           breakpoints={{
             300: {
@@ -144,69 +127,58 @@ const Reviews = () => {
             },
             1024: {
               slidesPerView: 3,
-            }
+            },
           }}
-
         >
-          {
-            ClientCards.map(({ id, name, pic, desc }) => (
-              <SwiperSlide key={id}>
-                <blockquote>
-                  <div
-                    className="relative text-center shadow-lg rounded-lg p-5 border border-gray-200"
-                  >
-                    <div className="w-5 h-5 absolute bottom-5 left-5">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="#E3E3E3"
-                        viewBox="0 0 448 512"
-                      >
-                        {/* Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.  */}
-                        <path
-                          d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"
-                        />
-                      </svg>
-                    </div>
-                    <div className="w-5 h-5 absolute bottom-5 right-5">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="#E3E3E3"
-                        viewBox="0 0 448 512"
-                      >
-                        {/* Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.  */}
-                        <path
-                          d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z"
-                        />
-                      </svg>
-                    </div>
-                    <Image
-                      src={pic}
-                      width={64}
-                      height={64}
-                      className="rounded-full mx-auto"
-                      alt=''
-                    />
-                    <h4 className="text-lg font-medium text-black my-3">
-                      {name}
-                    </h4>
-                    <p className="text-dark mb-3 text-sm leading-6">
-                      {desc}
-                    </p>
-                    <div className="text-[#BA9F79] flex justify-center">
-                      <AiFillStar size={20} />
-                      <AiFillStar size={20} />
-                      <AiFillStar size={20} />
-                      <AiFillStar size={20} />
-                    </div>
+          {ClientData.map(({ id, name, pic, desc }) => (
+            <SwiperSlide key={id}>
+              <blockquote>
+                <div className="relative text-center shadow-lg rounded-lg p-5 border border-gray-200">
+                  <div className="w-5 h-5 absolute bottom-5 left-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="#E3E3E3"
+                      viewBox="0 0 448 512"
+                    >
+                      {/* Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.  */}
+                      <path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z" />
+                    </svg>
                   </div>
-                </blockquote>
-              </SwiperSlide>
-            ))
-          }
+                  <div className="w-5 h-5 absolute bottom-5 right-5">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="#E3E3E3"
+                      viewBox="0 0 448 512"
+                    >
+                      {/* Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.  */}
+                      <path d="M448 296c0 66.3-53.7 120-120 120h-8c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H320c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72zm-256 0c0 66.3-53.7 120-120 120H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h8c30.9 0 56-25.1 56-56v-8H64c-35.3 0-64-28.7-64-64V160c0-35.3 28.7-64 64-64h64c35.3 0 64 28.7 64 64v32 32 72z" />
+                    </svg>
+                  </div>
+                  <Image
+                    src={pic}
+                    width={64}
+                    height={64}
+                    className="rounded-full mx-auto"
+                    alt=""
+                  />
+                  <h4 className="text-lg font-medium text-black my-3">
+                    {name}
+                  </h4>
+                  <p className="text-dark mb-3 text-sm leading-6">{desc}</p>
+                  <div className="text-[#BA9F79] flex justify-center">
+                    <AiFillStar size={20} />
+                    <AiFillStar size={20} />
+                    <AiFillStar size={20} />
+                    <AiFillStar size={20} />
+                  </div>
+                </div>
+              </blockquote>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Reviews
+export default Reviews;

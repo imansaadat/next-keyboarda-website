@@ -8,7 +8,7 @@ import Skills from "../components/Home/Skills";
 import Reviews from "../components/Home/Reviews";
 import Technologies from "../components/Home/Technologies";
 import Consultation from "../components/Home/Consultation";
-import { boxes, operationData, projects ,skills} from "../data";
+import { boxes, operationData, projects ,skills,ClientCards} from "../data";
 
 export default function Home({ setShowModal }) {
   return (
@@ -30,7 +30,7 @@ export default function Home({ setShowModal }) {
         <Projects projectsData={projects} />
         <Skills skillsData = {skills}/>
         <WhyKeyboarda />
-        <Reviews />
+        <Reviews ClientData = {ClientCards} />
         <Consultation setShowModal={setShowModal} />
         <Technologies />
       </main>
