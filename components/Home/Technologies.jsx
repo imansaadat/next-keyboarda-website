@@ -7,61 +7,7 @@ import 'swiper/css';
 import 'swiper/css/autoplay'
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-// Images
-import html from '../../public/assets/images/base/index/technology-section/html-css-js.svg'
-import bootstrap from '../../public/assets/images/base/index/technology-section/bootstrap.svg'
-import git from '../../public/assets/images/base/index/technology-section/git.svg'
-import react from '../../public/assets/images/base/index/technology-section/react.svg'
-import wordpress from '../../public/assets/images/base/index/technology-section/wordpress.svg'
-import nodeImg from '../../public/assets/images/base/index/technology-section/nodejs.svg'
-import phpImg from '../../public/assets/images/base/index/technology-section/php.svg'
-import laravel from '../../public/assets/images/base/index/technology-section/laravel.svg'
-const Technologies = () => {
-
-const TechnologiesImg = [
-  {
-    id:1,
-    img:html,
-    name:'html'
-  },
-  {
-    id:2,
-    img:bootstrap,
-    name:'bootstrap'
-  },
-  {
-    id:3,
-    img:git,
-    name:'git'
-  },
-  {
-    id:4,
-    img:react,
-    name:'react'
-  },
-  {
-    id:5,
-    img:wordpress,
-    name:'wordpress'
-  },
-  {
-    id:6,
-    img:nodeImg,
-    name:'node'
-  },
-  {
-    id:7,
-    img:phpImg,
-    name:'php'
-  },
-  {
-    id:8,
-    img:laravel,
-    name:'laravel',
-  },
-
-]
-
+const Technologies = ({TechnologiesData}) => {
   return (
     <section className="my-20">
       <div className="max-w-[1240px] mx-auto px-5">
@@ -129,7 +75,7 @@ const TechnologiesImg = [
           }}
         >
           {
-        TechnologiesImg.map(({id,img,name})=>(
+        TechnologiesData.map(({id,img,name})=>(
           <SwiperSlide key={id}>
           <div
                 className="flex justify-center items-center text-center shadow-lg rounded-lg border border-gray-200 px-1 py-2"
