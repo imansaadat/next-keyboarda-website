@@ -30,9 +30,9 @@ export default function Home({ setShowModal }) {
         <Projects projectsData={projects} />
         <Skills skillsData = {skills}/>
         <WhyKeyboarda />
-        <Reviews ClientData = {clientCards} />
+        <Reviews clientData = {clientCards} />
         <Consultation setShowModal={setShowModal} />
-        <Technologies TechnologiesData ={technologies}/>
+        <Technologies technologiesData ={technologies}/>
       </main>
     </div>
   );
