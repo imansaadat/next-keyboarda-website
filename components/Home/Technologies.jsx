@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/autoplay'
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-const Technologies = ({TechnologiesData}) => {
+const Technologies = ({technologiesData}) => {
   return (
     <section className="my-20">
       <div className="max-w-[1240px] mx-auto px-5">
@@ -75,7 +75,7 @@ const Technologies = ({TechnologiesData}) => {
           }}
         >
           {
-        TechnologiesData.map(({id,img,name})=>(
+        technologiesData.map(({id,img,name})=>(
           <SwiperSlide key={id}>
           <div
                 className="flex justify-center items-center text-center shadow-lg rounded-lg border border-gray-200 px-1 py-2"

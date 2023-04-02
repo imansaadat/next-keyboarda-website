@@ -14,7 +14,7 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-const Reviews = ({ClientData}) => {
+const Reviews = ({clientData}) => {
   return (
     <section className="relative py-10">
       <div className="max-w-[1240px] mx-auto px-5">
@@ -130,7 +130,7 @@ const Reviews = ({ClientData}) => {
             },
           }}
         >
-          {ClientData.map(({ id, name, pic, desc }) => (
+          {clientData.map(({ id, name, pic, desc }) => (
             <SwiperSlide key={id}>
               <blockquote>
                 <div className="relative text-center shadow-lg rounded-lg p-5 border border-gray-200">
