@@ -3,7 +3,7 @@ import Head from 'next/head'
 import About from '../components/About/About'
 import Join from '../components/About/Join'
 import JoinModal from '../components/Modal/JoinModal'
-const about = () => {
+const AboutPage = () => {
   const [showJoinModal,setShowJoinModal] = useState(false);
   return (
     <div>
@@ -20,4 +20,4 @@ const about = () => {
   )
 }
 
-export default about
+export default AboutPage
