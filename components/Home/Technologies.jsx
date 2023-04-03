@@ -91,7 +91,6 @@ const Technologies = ({technologiesData}) => {
         ))
           }
         </Swiper>
-     
       </div>
     </section>
   )

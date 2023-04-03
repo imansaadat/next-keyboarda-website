@@ -22,11 +22,11 @@ const Footer = () => {
             </ul>
             {/* Social media */}
             <div className='flex items-center justify-center mt-5'>
-              <a href="/" className='mx-2 text-light hover:text-gray-300'><AiFillGithub /></a>
-              <a href="/" className='mx-2 text-light hover:text-gray-300'><AiOutlineInstagram /></a>
-              <a href="/" className='mx-2 text-light hover:text-gray-300'><FaLinkedinIn /></a>
-              <a href="/" className='mx-2 text-light hover:text-gray-300'><FaWhatsapp /></a>
-              <a href="/" className='mx-2 text-light hover:text-gray-300'><FaTelegram /></a>
+              <a href="#" rel="noopener noreferrer" target="_blank" className='mx-2 text-light hover:text-gray-300'><AiFillGithub /></a>
+              <a href="#" rel="noopener noreferrer" target="_blank" className='mx-2 text-light hover:text-gray-300'><AiOutlineInstagram /></a>
+              <a href="#" rel="noopener noreferrer" target="_blank" className='mx-2 text-light hover:text-gray-300'><FaLinkedinIn /></a>
+              <a href="#" rel="noopener noreferrer" target="_blank" className='mx-2 text-light hover:text-gray-300'><FaWhatsapp /></a>
+              <a href="#" rel="noopener noreferrer" target="_blank" className='mx-2 text-light hover:text-gray-300'><FaTelegram /></a>
             </div>
           </div>
         </div>
