@@ -1,8 +1,7 @@
 import React from 'react'
 import ModalBtn from '../Buttons/ModalBtn'
 import Button from '../Buttons/ModalBtn'
-const Service = ({setShowModal}) => {
- 
+const Counseling = ({setShowModal}) => {
   return (
     <section className="relative py-10 md:py-20">
     <div className="max-w-[1240px] mx-auto px-5">
@@ -136,4 +135,4 @@ const Service = ({setShowModal}) => {
   )
 }
 
-export default Service
+export default Counseling

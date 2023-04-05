@@ -2,6 +2,8 @@ import brand from "./public/assets/images/base/index/service-section/brand.svg";
 import ui from "./public/assets/images/base/index/service-section/ui.svg";
 import marketing from "./public/assets/images/base/index/service-section/marketing.svg";
 import illus from "./public/assets/images/base/index/service-section/illus.svg";
+import seo from "./public/assets/images/base/services/illus.svg";
+import support from "./public/assets/images/base/services/support.svg";
 //
 import projectImg from "./public/assets/images/base/index/Operation-section/completed-project.svg";
 import customerImg from "./public/assets/images/base/index/Operation-section/customer-satisfaction.svg";
@@ -14,15 +16,15 @@ import ressis from "./public/assets/images/base/index/projects-section/ressis.pn
 //
 import zoomTeam from "./public/assets/images/base/index/reviews-section/customer-picture.png";
 //
-import html from './public/assets/images/base/index/technology-section/html-css-js.svg'
-import bootstrap from './public/assets/images/base/index/technology-section/bootstrap.svg'
-import git from './public/assets/images/base/index/technology-section/git.svg'
-import react from './public/assets/images/base/index/technology-section/react.svg'
-import wordpress from './public/assets/images/base/index/technology-section/wordpress.svg'
-import nodeImg from './public/assets/images/base/index/technology-section/nodejs.svg'
-import phpImg from './public/assets/images/base/index/technology-section/php.svg'
-import laravel from './public/assets/images/base/index/technology-section/laravel.svg'
-// 
+import html from "./public/assets/images/base/index/technology-section/html-css-js.svg";
+import bootstrap from "./public/assets/images/base/index/technology-section/bootstrap.svg";
+import git from "./public/assets/images/base/index/technology-section/git.svg";
+import react from "./public/assets/images/base/index/technology-section/react.svg";
+import wordpress from "./public/assets/images/base/index/technology-section/wordpress.svg";
+import nodeImg from "./public/assets/images/base/index/technology-section/nodejs.svg";
+import phpImg from "./public/assets/images/base/index/technology-section/php.svg";
+import laravel from "./public/assets/images/base/index/technology-section/laravel.svg";
+//
 export const boxes = [
   {
     id: 1,
@@ -184,5 +186,56 @@ export const technologies = [
     id: 8,
     img: laravel,
     name: "laravel",
+  },
+];
+
+export const serviceBoxes = [
+  {
+    id: 1,
+    img: seo,
+    title: "سئو",
+    desc: "رسیدن به رتبه های اول گوگل در سریعترین زمان",
+  },
+  {
+    id: 2,
+    img: ui,
+    title: "رابط کاربری",
+    desc: "طراحی و ایجاد رابط های کاربری حرفه ای بر اساس نیازهای روز بازار",
+  },
+  {
+    id: 3,
+    img: seo,
+    title: "بهینه سازی سایت",
+    desc: "افزایش سرعت سایت از طریق بهینه سازی و رفع خطاها",
+  },
+  {
+    id: 4,
+    img: support,
+    title: "پشتیبانی",
+    desc: "با پشتیبانی 24 ساعت در 7 روز هفته، نگرانی نداشته باش",
+  },
+  {
+    id: 5,
+    img: ui,
+    title: "تجربه کاربری",
+    desc: "ایجاد تجربه کاربری روان و ساده برای مشتریان و کاربران",
+  },
+  {
+    id: 6,
+    img: brand,
+    title: "برند سازی",
+    desc: "با داشتن یک سایت حرفه ای برند خود را گسترش دهید",
+  },
+  {
+    id: 7,
+    img: marketing,
+    title: "طراحی تجاری",
+    desc: "طراحی تجاری با پنل های حرفه ای و کارآمد برای مشتریان و کاربران",
+  },
+  {
+    id: 8,
+    img: seo,
+    title: "تجربه مشتری",
+    desc: "با بهبود تجربه مشتریان، برند خود را محبوب تر کنید",
   },
 ];
