@@ -2,7 +2,6 @@ import React from "react";
 import Head from "next/head";
 import ServiceItems from "../components/Service/ServiceItems";
 import Service from "../components/Service/CounselingSection";
-import Navbar from "../components/Navbar/Navbar";
 import { serviceBoxes } from "../data";
 const service = ({ setShowModal }) => {
   return (
