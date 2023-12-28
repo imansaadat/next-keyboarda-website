@@ -18,7 +18,7 @@ const Join = ({setShowJoinModal}) => {
                 باور دارید ، ما از شما میخواهیم به تیم ما بپیوندید که با ما دوست
                 و همکار شوید.
               </p>
-              <ModalBtn myClass='btn' text='در خواست مشاوره' modal={()=>setShowJoinModal(true)} />
+              <ModalBtn myClass='btn' text='به ما بپیوندید' modal={()=>setShowJoinModal(true)} />
             </div>
           </div>
         </div>
