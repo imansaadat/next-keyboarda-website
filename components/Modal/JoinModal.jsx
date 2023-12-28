@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import Image from 'next/image'
 import { FaTimes } from 'react-icons/fa'
 import { IoIosArrowDown } from 'react-icons/io'
@@ -6,6 +6,23 @@ import { IoIosArrowDown } from 'react-icons/io'
 import security from '../../public/assets/images/base/modal/security-code.svg'
 import joinUs from '../../public/assets/images/base/modal/join-us.svg'
 const JoinModal = ({ showJoinModal, setShowJoinModal }) => {
+  const closeModal = () => {
+    setShowJoinModal(false);
+  };
+
+  const handleOverlayClick = (e) => {
+    if (e.target.classList.contains('overlay')) {
+      closeModal();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleOverlayClick);
+
+    return () => {
+      document.removeEventListener('mousedown', handleOverlayClick);
+    };
+  }, []);
   return (
     <>
       {
