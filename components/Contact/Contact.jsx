@@ -58,7 +58,7 @@ const Contact = () => {
                 </div>
                 <div className="md:col-span-1 mb-2">
                   <label className="block mb-1 text-dark">موبایل <span className="text-red-600">*</span></label>
-                  <input type="tel" id="phone" className="w-full border border-gray-200 py-3 px-4 outline-none rounded-3xl focus:border-baseColor" name="phone" placeholder="شماره تماس خود را وارد نمایید" />
+                  <input type="tel" id="phone" className="w-full border border-gray-200 py-3 px-4 outline-none rounded-3xl focus:border-baseColor placeholder:text-right" name="phone" placeholder="شماره تماس خود را وارد نمایید" />
                 </div>
                 <div className="md:col-span-1 mb-2">
                   <label className="block mb-1 text-dark">ایمیل</label>
